@@ -36,4 +36,6 @@ export class AppComponent {
   fecha: Date = new Date();
 
   idioma: string = 'en';
+
+  videoUrl: string = 'https://www.youtube.com/embed/ugn6fM5Rc-E';
 }
