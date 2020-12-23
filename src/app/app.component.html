@@ -83,6 +83,60 @@
           <td>async</td>
           <td>{{ valorPromesa | async }}</td>
         </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td>date</td>
+          <td>{{ fecha | date }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td>date: 'medium'</td>
+          <td>{{ fecha | date: "medium" }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td>date: 'short'</td>
+          <td>{{ fecha | date: "short" }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td>date: 'MMMM-dd'</td>
+          <td>{{ fecha | date: "MMMM-dd" }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td>date: "MMMM-dd":"":"es"</td>
+          <td>{{ fecha | date: "MMMM-dd":"":"es" }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td>date: "MMMM-dd":"":"fr"</td>
+          <td>{{ fecha | date: "MMMM-dd":"":"fr" }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ fecha }}</td>
+          <td>
+            date: "MMMM-dd":"":"{{ idioma }}"
+            <br />
+            <button (click)="idioma = 'es'" class="mr-1 btn btn-primary">
+              Español
+            </button>
+            <button (click)="idioma = 'en'" class="mr-1 btn btn-secondary">
+              Ingles
+            </button>
+            <button (click)="idioma = 'fr'" class="mr-1 btn btn-success">
+              Español
+            </button>
+          </td>
+          <td>{{ fecha | date: "MMMM-dd":"":idioma }}</td>
+        </tr>
       </tbody>
     </table>
   </div>

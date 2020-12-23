@@ -31,4 +31,8 @@ export class AppComponent {
       resolve('llego la data');
     }, 4500);
   });
+
+  fecha: Date = new Date();
+
+  idioma: string = 'en';
 }
