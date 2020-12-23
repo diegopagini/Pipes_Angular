@@ -53,7 +53,47 @@
           <td>number: ".0-2"</td>
           <td>{{ PI | number: ".0-2" }}</td>
         </tr>
+
+        <tr>
+          <td>{{ Porcentaje }}</td>
+          <td>percent</td>
+          <td>{{ Porcentaje | percent }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ Porcentaje }}</td>
+          <td>percent: '2.2-2'</td>
+          <td>{{ Porcentaje | percent: "2.2-2" }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ salario }}</td>
+          <td>currency</td>
+          <td>{{ salario | currency }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ salario }}</td>
+          <td>currency: 'EUR'</td>
+          <td>{{ salario | currency: "EUR" }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ valorPromesa }}</td>
+          <td>async</td>
+          <td>{{ valorPromesa | async }}</td>
+        </tr>
       </tbody>
     </table>
+  </div>
+</div>
+
+<h3>JSON</h3>
+<hr />
+<div class="row mb-5">
+  <div class="col">
+    <pre>
+      {{ heroe | json }}
+    </pre>
   </div>
 </div>
