@@ -9,9 +9,10 @@ registerLocaleData(localFr);
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CapitalizarPipe } from './pipes/capitalizar.pipe';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CapitalizarPipe],
   imports: [BrowserModule, AppRoutingModule],
   // providers: [{ provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent],

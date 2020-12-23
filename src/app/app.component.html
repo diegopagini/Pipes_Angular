@@ -132,10 +132,16 @@
               Ingles
             </button>
             <button (click)="idioma = 'fr'" class="mr-1 btn btn-success">
-              Español
+              Frances
             </button>
           </td>
           <td>{{ fecha | date: "MMMM-dd":"":idioma }}</td>
+        </tr>
+
+        <tr>
+          <td>{{ nombre2 }}</td>
+          <td>capitalizar</td>
+          <td>{{ nombre2 | capitalizar }}</td>
         </tr>
       </tbody>
     </table>

@@ -15,6 +15,7 @@ export class AppComponent {
   Porcentaje: number = 0.234;
 
   salario: number = 1234.5;
+  nombre2: string = 'diEgo hErnAn pAgini';
 
   heroe = {
     nombre: 'Logan',
