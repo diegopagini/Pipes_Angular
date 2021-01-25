@@ -12,9 +12,10 @@ import { AppComponent } from './app.component';
 import { CapitalizarPipe } from './pipes/capitalizar.pipe';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { ContraseñaPipe } from './pipes/contraseña.pipe';
+import { CreditCardPipe } from './pipes/credit-card.pipe';
 
 @NgModule({
-  declarations: [AppComponent, CapitalizarPipe, DomseguroPipe, ContraseñaPipe],
+  declarations: [AppComponent, CapitalizarPipe, DomseguroPipe, ContraseñaPipe, CreditCardPipe],
   imports: [BrowserModule, AppRoutingModule],
   // providers: [{ provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent],
